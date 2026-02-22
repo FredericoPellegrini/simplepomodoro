@@ -1,0 +1,14 @@
+/* Importando a fonte do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    /* Evita seleções azuis de texto acidentais ao clicar rápido nos botões */
+    user-select: none; 
+    -webkit-user-select: none;
+}
+
+/* Garante que os números não fiquem "dançando" lateralmente quando mudam */
+.tabular-nums {
+    font-variant-numeric: tabular-nums;
+}

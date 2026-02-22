@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Pomodoro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-black text-zinc-200 h-screen flex flex-col justify-between items-center pb-8 pt-8">
+    
+    <div class="flex-1"></div>
+
+    <div class="w-full max-w-sm px-8 flex flex-col items-center">
+        
+        <div id="statusText" class="text-zinc-500 uppercase tracking-[0.3em] text-xs mb-6 font-semibold">
+            Foco
+        </div>
+
+        <div id="timerDisplay" class="text-8xl font-extralight tracking-tighter tabular-nums mb-10 text-white">
+            25:00
+        </div>
+
+        <div class="w-full h-1 bg-zinc-900 rounded-full overflow-hidden mb-12">
+            <div id="progressBar" class="h-full bg-white w-0 transition-all duration-1000 ease-linear"></div>
+        </div>
+
+        <div class="flex items-center gap-8">
+            <button id="resetBtn" class="text-zinc-600 hover:text-white transition-colors duration-300 uppercase tracking-widest text-[10px] outline-none">
+                Reset
+            </button>
+            
+            <button id="toggleBtn" class="border border-zinc-800 hover:border-zinc-500 text-zinc-300 hover:text-white transition-all duration-300 rounded-full py-3 px-8 uppercase tracking-widest text-xs outline-none focus:ring-1 focus:ring-zinc-600 w-32">
+                Play
+            </button>
+            
+            <button id="nextBtn" class="text-zinc-600 hover:text-white transition-colors duration-300 uppercase tracking-widest text-[10px] outline-none">
+                Next
+            </button>
+        </div>
+
+    </div>
+
+    <div class="flex-1 flex items-end">
+        <footer class="text-zinc-700 text-[10px] tracking-[0.2em] uppercase font-light">
+            simple pomodoro
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
